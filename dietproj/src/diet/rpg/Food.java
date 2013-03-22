@@ -10,10 +10,10 @@ package diet.rpg;
  */
 public class Food {
     private String foodName;
-    private float foodCalories;
+    private double foodCalories;
 
 
-Food(String foodName, float foodCalories){
+Food(String foodName, double foodCalories){
     this.foodName = foodName;
     this.foodCalories = foodCalories;
 }
@@ -21,6 +21,10 @@ Food(String foodName, float foodCalories){
 public static void newFood(){
     System.out.println("Digite o nome do alimento: ");
     System.out.println("Digite a quantidade de calorias: ");
+    Food fd = new Food("Bolacha", 45);
+    printFood(fd);
+    System.out.println("Cadastro de alimento efetuado com sucesso :) \n\n");
+    
 }
 
 public static void printFood(Food fd){
